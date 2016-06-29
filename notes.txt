@@ -1,0 +1,2 @@
+Fandango URL format: http://www.fandango.com/06880_movietimes?date=7/1/2016&q=06880
+  where "06880" is ZIP code and "7/1/2016" is date
