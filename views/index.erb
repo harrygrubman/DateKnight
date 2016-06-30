@@ -2,24 +2,50 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Date Knight Homepage</title>
+    <title>DateKnight</title>
+    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="container gradient">
     <h1>DateKnight</h1>
     <form action="/results" method="post">
       <label for="sentence">Zip Code</label>
       <input type="text" name="zipCode" data-fv-zipcode="true">
       <label for="date">Date</label>
       <input type="date" name="date">
-      <input type="submit" name="Search">
-      <!-- THIS IS TO PUT WHEN ASKING THE MULTIPLE CHOICE Questions -->
-      <!-- <p class="question">1. ""</p>
-        <ul class="answers">
-          <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Answer 1</label><br/>
-          <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Answer 2</label><br/>
-          <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Answer 3</label><br/>
-          <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Answer 4</label><br/>
-        </ul> -->
+      <p class="question">1. "What type of food would you like to have?"</p>
+      <ul class="answers">
+          <input type="radio" name="q1" value="delis" id="q1b"><label for="q1b">Delis</label><br/>
+          <input type="radio" name="q1" value="pizza" id="q1c"><label for="q1c">Pizza</label><br/>
+          <input type="radio" name="q1" value="italian" id="q1d"><label for="q1d">Italian</label><br/>
+          <input type="radio" name="q1" value="tradamerican" id="q1d"><label for="q1d">Traditional American</label><br/>
+          <input type="radio" name="q1" value="sandwiches" id="q1d"><label for="q1d">Sandwiches</label><br/>
+          <input type="radio" name="q1" value="newamerican" id="q1d"><label for="q1d">New American</label><br/>
+          <input type="radio" name="q1" value="nightlife" id="q1d"><label for="q1d">Nightlife</label><br/>
+          <input type="radio" name="q1" value="bars" id="q1d"><label for="q1d">Bars</label><br/>
+          <input type="radio" name="q1" value="mexican" id="q1d"><label for="q1d">Mexican</label><br/>
+          <input type="radio" name="q1" value="seafood" id="q1d"><label for="q1d">Seafood</label><br/>
+          <input type="radio" name="q1" value="cafes" id="q1d"><label for="q1d">Cafes</label><br/>
+          <input type="radio" name="q1" value="chinese" id="q1d"><label for="q1d">Chinese</label><br/>
+          <input type="radio" name="q1" value="latin" id="q1d"><label for="q1d">Latin</label><br/>
+          <input type="radio" name="q1" value="salad" id="q1d"><label for="q1d">Salad</label><br/>
+          <input type="radio" name="q1" value="sushi" id="q1d"><label for="q1d">Sushi</label><br/>
+          <input type="radio" name="q1" value="burgers" id="q1d"><label for="q1d">Burgers</label><br/>
+          <input type="radio" name="q1" value="japanese" id="q1d"><label for="q1d">Japanese</label><br/>
+          <input type="radio" name="q1" value="asianfusion" id="q1d"><label for="q1d">Asian Fusion</label><br/>
+          <input type="radio" name="q1" value="diners" id="q1d"><label for="q1d">Diners</label><br/>
+          <input type="radio" name="q1" value="gourmet" id="q1d"><label for="q1d">Specialty Foods</label><br/>
+       </ul>
+        <input type="submit" name="Search">
       </form>
+      </div>
   </body>
 </html>
