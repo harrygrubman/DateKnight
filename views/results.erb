@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Redirecting</title>
+    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+    <title>Results</title>
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -13,9 +14,22 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </head>
   <body>
-    Fandango URL:
-    <a href="<%= @fandangoURL %>">FANDANGO</a>
-    <a href="<%= @yelpURL %>">YELP</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-4">
+          <a href="<%= @fandangoURL %>"><img src="images/fandango.png" alt="Fandango" width="90%"/></a>
+        </div>
+        <div class="col-md-4">
+          <a href="<%= @yelpURL %>"><img src="images/yelp.png" alt="Yelp" width="90%"/></a>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
