@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
 
   post '/results' do
     @fandangoURL = fandango(params[:zipCode], params[:date])
-    @yelpURL = yelp(params[:zipCode])
+    @yelpURL = yelp(params[:zipCode], params[:category])
     erb :results
   end
 
