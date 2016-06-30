@@ -9,9 +9,10 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/results' do
-    @fandangoURL = fandango(params[:zipCode], params[:date])
-    @yelpURL = yelp(params[:zipCode], params[:category])
-    erb :results
+    # @fandangoURL = fandango(params[:zipCode], params[:date])
+    # @yelpURL = yelp(params[:zipCode], params[:category])
+    # erb :results
+    
   end
 
 end
