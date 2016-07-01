@@ -21,7 +21,7 @@ auth_token ||= ENV["auth_token"]
     erb :results
   end
 
-  post '/success' do
+  post '/yelp' do
 
 		# @message = params[:message] + " --Sent from https://date-knight.herokuapp.com/"
 		# @destination = params[:destination]
@@ -35,7 +35,7 @@ auth_token ||= ENV["auth_token"]
 			:body => 'this'
 		})
     puts params
-		erb :success
+		erb :yelp
   end
 
 end
