@@ -21,3 +21,32 @@ background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(181,198,208,1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
 
 }
+
+form {
+  background: -webkit-linear-gradient(left, #ce1976, #4b3a97 70%);
+  background: -moz-linear-gradient(left, #ce1976, #4b3a97 70%);
+  background: linear-gradient(left, #ce1976, #4b3a97 70%);
+  margin: auto;
+  position: relative;
+  width: 550px;
+  height: 785px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 100px;
+}
+
+.black-text
+{
+  color: black;
+}
