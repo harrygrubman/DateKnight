@@ -24,7 +24,7 @@
         <div class="col-md-8 body">
           <form action="/results" method="post">
             <label for="sentence">Zip Code</label>
-            <input type="text" name="zipCode" data-fv-zipcode="true">
+            <input type="number" name="zipCode" min="210" max="99950" required>
             <label for="date">Date</label>
             <input type="date" name="date">
             <p class="question">1. "What type of food would you like to have?"</p>
