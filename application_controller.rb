@@ -5,8 +5,8 @@ Bundler.require
 class ApplicationController < Sinatra::Base
 
   #begin twilio ruby code
-account_sid ||= ENV["account_sid"]
-auth_token ||= ENV["auth_token"]
+@account_sid = 'SKb0e684e12330999147880edc4e39f79a'
+@auth_token = 'vRpBFDDOCFcyMqqrz8gLg1esFo7xgEKS'
 
 #end twilio ruby code
 
@@ -26,16 +26,21 @@ auth_token ||= ENV["auth_token"]
 		# @message = params[:message] + " --Sent from https://date-knight.herokuapp.com/"
 		# @destination = params[:destination]
 		# @puppy = params[:puppy]
-
-		@client = Twilio::REST::Client.new(account_sid, auth_token) # set up a client to talk to the Twilio REST API
+    # @client = Twilio::REST::Client.new(@account_sid, @auth_token) # set up a client to talk to the Twilio REST API
+    #
+		# @client.account.messages.create({
+		# 	:from => '+19314420983',
+		# 	:to => @destination,
+		# 	:body => @message,
+		# 	:media_url => @puppy
+		# })
+    @client = Twilio::REST::Client.new('SKb0e684e12330999147880edc4e39f79a', 'vRpBFDDOCFcyMqqrz8gLg1esFo7xgEKS') # set up a client to talk to the Twilio REST API
 
 		@client.account.messages.create({
-			:from => '+16692383283 ',
-			:to => '+14752235842',
-			:body => 'this'
+			:from => '+16692383283',
+			:to => '+4752235842',
+			:body => 'testhi'
 		})
-    puts params
-		erb :yelp
-  end
+    end
 
 end
